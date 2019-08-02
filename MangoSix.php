@@ -9,6 +9,15 @@ class MangoSix
     // クラス内の変数
     private $place;
 
+    // インスタンス化時に自動で実施されるメソッド
+    public function __construct($place)
+    {
+        // このクラスのインスタンスのplaceプロパティに、変数$palceの内容を代入
+        // $this ===  このクラスのインスタンス
+        // $place === 引数
+        $this->place = $place;
+    }
+
     // メソッド
     // クラス内の関数
     public function provide($name)
