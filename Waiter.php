@@ -8,4 +8,13 @@ require_once('Staff.php');
 // ※privateは除く
 // class 継承先のクラス extends 継承元のクラス {}
 class Waiter extends Staff
-{ }
+{
+    // オーバーライド
+    public $role = 'ウェイター';
+
+    // 継承元のプロパティ(メソッド)を継承先で上書きすること
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+}
