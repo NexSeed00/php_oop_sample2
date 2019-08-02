@@ -25,6 +25,13 @@ class MangoSix
         echo $name;
     }
 
+    // ゲッター
+    // privateなプロパティにアクセスしたい時に使用する
+    public function getPlace()
+    {
+        return $this->place;
+    }
+
     // アクセス修飾子
     // プロパティ、メソッドがどこからアクセス可能か決める
     /**

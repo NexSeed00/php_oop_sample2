@@ -14,3 +14,8 @@ $mangoSix->provide('マンゴーシェイク');
 // privateなため、クラス外からはアクセスできずエラー
 // publicにするとエラーは消える
 // $mangoSix->place;
+
+echo '<br>';
+
+// MangoSixクラスのgetPlaceメソッド実施
+echo $mangoSix->getPlace();
