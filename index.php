@@ -29,3 +29,12 @@ echo '<br>';
 // 0番のnameプロパティにアクセス
 // 0番にはhireメソッドでstaffクラスのインスタンスが入ってる
 echo $mangoSix->staff[0]->name;
+
+$mangoSix->hireWaiter('かん');
+
+echo '<br>';
+// 1番にはhireWaiterメソッドでWaiterクラスのインスタンスが入ってる
+echo $mangoSix->staff[1]->name;
+
+echo '<br>';
+echo $mangoSix->staff[1]->role;

@@ -1,6 +1,7 @@
 <?php
 
-require_once('Staff.php');
+// WaiterクラスでStaffクラスを読み込んでいるため、Waiterクラスのみの読み込みでOK
+require_once('Waiter.php');
 
 // クラスを定義
 // 定義の仕方
@@ -40,6 +41,13 @@ class MangoSix
         // MangoSixクラスのインスタンスのstaffプロパティに,
         // Staffクラスのインスタンスを追加
         $this->staff[] = new Staff($name, $role);
+    }
+
+    public function hireWaiter($name)
+    {
+        // MangoSixクラスのインスタンスのstaffプロパティに,
+        // Staffクラスのインスタンスを追加
+        $this->staff[] = new Waiter($name);
     }
 
     // アクセス修飾子
