@@ -1,5 +1,7 @@
 <?php
 
+require_once('Staff.php');
+
 // クラスを定義
 // 定義の仕方
 // class クラス名 {} 
@@ -8,6 +10,7 @@ class MangoSix
     // プロパティ
     // クラス内の変数
     private $place;
+    public $staff = [];
 
     // インスタンス化時に自動で実施されるメソッド
     public function __construct($place)
@@ -30,6 +33,13 @@ class MangoSix
     public function getPlace()
     {
         return $this->place;
+    }
+
+    public function hire($name, $role)
+    {
+        // MangoSixクラスのインスタンスのstaffプロパティに,
+        // Staffクラスのインスタンスを追加
+        $this->staff[] = new Staff($name, $role);
     }
 
     // アクセス修飾子

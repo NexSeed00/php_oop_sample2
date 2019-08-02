@@ -19,3 +19,13 @@ echo '<br>';
 
 // MangoSixクラスのgetPlaceメソッド実施
 echo $mangoSix->getPlace();
+
+// MangoSixクラスのhireメソッド実施
+$mangoSix->hire('あつし', '店長');
+
+echo '<br>';
+
+// MangoSixクラスのstaffプロパティ(配列)の
+// 0番のnameプロパティにアクセス
+// 0番にはhireメソッドでstaffクラスのインスタンスが入ってる
+echo $mangoSix->staff[0]->name;
