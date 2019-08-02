@@ -17,4 +17,9 @@ class Waiter extends Staff
     {
         $this->name = $name;
     }
+
+    public function getOrder($item)
+    {
+        echo '厨房に頼む';
+    }
 }

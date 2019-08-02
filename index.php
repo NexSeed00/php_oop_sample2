@@ -34,7 +34,11 @@ $mangoSix->hireWaiter('かん');
 
 echo '<br>';
 // 1番にはhireWaiterメソッドでWaiterクラスのインスタンスが入ってる
+// Waiterにはnameプロパティがないが、継承元のStaffにnameプロパティがあるためエラーにならない
 echo $mangoSix->staff[1]->name;
 
 echo '<br>';
 echo $mangoSix->staff[1]->role;
+
+echo '<br>';
+$mangoSix->staff[1]->getOrder('コッペパン');
