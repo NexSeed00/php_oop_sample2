@@ -9,3 +9,8 @@ $mangoSix = new MangoSix();
 
 // MangoSixクラスのprovideメソッド実施
 $mangoSix->provide('マンゴーシェイク');
+
+// MangoSixクラスのplaceプロパティにアクセス
+// privateなため、クラス外からはアクセスできずエラー
+// publicにするとエラーは消える
+$mangoSix->place;
