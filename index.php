@@ -42,3 +42,7 @@ echo $mangoSix->staff[1]->role;
 
 echo '<br>';
 $mangoSix->staff[1]->getOrder('コッペパン');
+
+echo '<br>';
+$goodChef = new Good\Chef('しんや');
+echo $goodChef->hello();

@@ -23,7 +23,21 @@ namespace Good;
  * Staffとしている。
  */
 
+
+require_once('Trait/Greeting.php');
+
 use Staff;
+use Greeting;
 
 class Chef extends Staff
-{ }
+{
+    // traitを使用する場合は、class内でuseする
+    // 複数のtraitを使用することも可能
+    use Greeting;
+    public $role = 'chef';
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+}
