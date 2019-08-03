@@ -25,8 +25,11 @@ namespace Good;
 
 use Staff;
 use traits\Greeting;
+use iChef;
 
-class Chef extends Staff
+// interfaceを実装するときはclass名 implements interface名
+// 親クラスは1つのみ(単一継承)だが、interfaceは複数指定することが可能
+class Chef extends Staff implements iChef
 {
     // traitを使用する場合は、class内でuseする
     // 複数のtraitを使用することも可能
@@ -36,5 +39,12 @@ class Chef extends Staff
     public function __construct($name)
     {
         $this->name = $name;
+    }
+
+    // interfaceで定義しているメソッド
+    // これを実装しないとエラー
+    public function cook($name)
+    {
+        return $name . 'を作りました';
     }
 }

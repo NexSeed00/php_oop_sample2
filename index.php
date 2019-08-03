@@ -48,3 +48,6 @@ $mangoSix->staff[1]->getOrder('コッペパン');
 echo '<br>';
 $goodChef = new Good\Chef('しんや');
 echo $goodChef->hello();
+
+echo '<br>';
+echo $goodChef->cook('サンドウィッチ');
