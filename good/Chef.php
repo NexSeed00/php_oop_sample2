@@ -23,11 +23,8 @@ namespace Good;
  * Staffとしている。
  */
 
-
-require_once('Trait/Greeting.php');
-
 use Staff;
-use Greeting;
+use traits\Greeting;
 
 class Chef extends Staff
 {

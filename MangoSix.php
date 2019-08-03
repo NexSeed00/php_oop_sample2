@@ -1,10 +1,6 @@
 <?php
 
 // WaiterクラスでStaffクラスを読み込んでいるため、Waiterクラスのみの読み込みでOK
-require_once('Waiter.php');
-
-require_once('bad/Chef.php');
-require_once('good/Chef.php');
 
 // クラスを定義
 // 定義の仕方

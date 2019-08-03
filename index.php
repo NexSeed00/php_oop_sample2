@@ -1,7 +1,9 @@
 <?php
 
+require_once('autoload.php');
+
 // MangoSix.phpの読み込み
-require_once('MangoSix.php');
+// require_once('MangoSix.php');
 
 // new Class名 === クラスのインスタンス化
 // MangoSixクラスのインスタンスを$mangoSixに代入

@@ -1,7 +1,5 @@
 <?php
 
-require_once('Staff.php');
-
 // Staffクラスを継承したWaiterクラスを作成
 // 継承先のクラス(Waiter)は、
 // 継承元のクラスのプロパティ、メソッドにアクセス可能
