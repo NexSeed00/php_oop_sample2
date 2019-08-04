@@ -51,3 +51,14 @@ echo $goodChef->hello();
 
 echo '<br>';
 echo $goodChef->cook('サンドウィッチ');
+
+
+echo '<br>';
+// Staffクラスの静的プロパティ$uniformにアクセス
+echo Staff::$uniform;
+// ↓これは静的プロパティではないためエラー
+// echo Staff::$name;
+
+echo '<br>';
+// Staffクラスの静的メソッドotsukaresama()を実行
+Staff::otsukaresama();
