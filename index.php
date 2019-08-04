@@ -62,3 +62,17 @@ echo Staff::$uniform;
 echo '<br>';
 // Staffクラスの静的メソッドotsukaresama()を実行
 Staff::otsukaresama();
+
+echo '<br>';
+
+/**
+ * 子クラスで$uniformプロパティをオーバーライドしてるが、
+ * getUniformで取得できるのは親クラスの$uniform
+ */
+echo Waiter::$uniform;
+echo '<br>';
+echo Waiter::getUniform();
+
+//  ↑を解決するのが遅延静的束縛(late static binding)
+echo '<br>';
+echo Waiter::getUniform2();

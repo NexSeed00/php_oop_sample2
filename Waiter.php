@@ -7,6 +7,8 @@
 // class 継承先のクラス extends 継承元のクラス {}
 class Waiter extends Staff
 {
+    public static $uniform = 'かわいい';
+
     // オーバーライド
     public $role = 'ウェイター';
 

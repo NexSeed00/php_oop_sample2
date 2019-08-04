@@ -23,4 +23,19 @@ class Staff
     {
         echo __CLASS__ . 'お疲れ様';
     }
+
+    public static function getUniform()
+    {
+        // 静的プロパティ(メソッド)にクラス内からアクセスする場合は、
+        // selfを使用する
+        return self::$uniform . 'ユニフォーム';
+    }
+
+    public static function getUniform2()
+    {
+        // staticも静的プロパティ(メソッド)にクラス内からアクセスする場合に使用
+        // staticは実行してるクラスを指す
+        // selfは定義したクラスを指す
+        return static::$uniform . 'ユニフォーム';
+    }
 }
